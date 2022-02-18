@@ -21,12 +21,7 @@ Email: alfonso.sousa-poza@uni-hohenheim.de
 
 
 Abstract
-This study applies a machine learning (ML) approach to around half a million observations from the
-German Socio-Economic Panel to assess the relation between life satisfaction and age. We show that with
-our ML-based approach it is possible to isolate the effect of age on life satisfaction across the lifecycle 
-without having to explicitly parameterize the complex relation between age and other covariates – this complex 
-relation is taken into account by a feedforward neural network. Our results show a clear U-shape relation between 
-age and life satisfaction across the lifespan with a minimum at around 55 years of age. 
+This study applies a machine learning (ML) approach to around 400,000 observations from the German Socio-Economic Panel to assess the relation between life satisfaction and age. We show that with our ML-based approach it is possible to isolate the effect of age on life satisfaction across the lifecycle without explicitly parameterizing the complex relationship between age and other covariates – this complex relation is taken into account by a feedforward neural network. Our results show a clear U-shape relation between age and life satisfaction across the lifespan, with a minimum at around 50 years of age. 
  
 
 JEL Classification Codes: I12, I14, I15 
