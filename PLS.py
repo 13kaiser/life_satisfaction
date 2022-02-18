@@ -30,11 +30,11 @@ warnings.filterwarnings('ignore')
 torch.cuda.empty_cache()
 # Working directory
 
-os.chdir("C:/Arbeit/Paper/Alfonso_Steffe_ML/Otterbach")
+os.chdir("~path")
 
 
 # Load data
-lfsat=pd.read_stata('lfsat_V12_2019-02-13c.dta').dropna()
+lfsat=pd.read_stata('~path').dropna()
 
 # Clean up
 
@@ -112,7 +112,7 @@ y_hat=regr.predict(x_test_s)
 
 final=test
 final["pre"]=y_hat
-os.chdir("C:/Arbeit/Paper/Alfonso_Steffe_ML/Otterbach/final_plots")
+os.chdir("~path")
 
 pre=final.groupby("age",as_index=False)["pre","lfsat"].mean()
 plt.plot(pre.age,pre.pre, label="predicted values")
