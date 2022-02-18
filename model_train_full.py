@@ -19,10 +19,10 @@ warnings.filterwarnings('ignore')
 torch.cuda.empty_cache()
 # Working directory
 
-os.chdir("C:/Arbeit/Paper/Alfonso_Steffe_ML/Otterbach")
+os.chdir("~path")
 
 # Load data
-lfsat=pd.read_stata('lfsat_V12_2019-02-13c.dta').dropna()
+lfsat=pd.read_stata('~path').dropna()
 
 # Clean up
 
@@ -222,7 +222,7 @@ checkpoint = {'model': lf_nn(hid0,hid1,hid2,hid3,hid4,hid5,drout1,net),
           'state_dict': model.state_dict(),
           'optimizer' : optimizer.state_dict()}
 
-torch.save(checkpoint, 'C:/Arbeit/Paper/Alfonso_Steffe_ML/Otterbach/checkpoint.pth')
+torch.save(checkpoint, '~path')
 
 
 
@@ -243,7 +243,7 @@ test_error=error.mean()
 
 final=test
 final["pre"]=y_hat
-os.chdir("C:/Arbeit/Paper/Alfonso_Steffe_ML/Otterbach/final_plots")
+os.chdir("~path")
 
 pre=final.groupby("age",as_index=False)["pre","lfsat"].mean()
 plt.plot(pre.age,pre.pre, label="predicted values")
